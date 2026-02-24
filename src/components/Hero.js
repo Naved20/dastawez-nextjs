@@ -5,7 +5,7 @@ export default function Hero() {
         {/* Left Illustration */}
         <div className="relative flex items-center justify-center">
           <img 
-            src="/illustration.svg" 
+            src="/Illustration.svg" 
             alt="Documentation illustration" 
             className="w-full max-w-md"
           />
@@ -16,12 +16,12 @@ export default function Hero() {
           <div className="relative">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C3E50] leading-tight">
               Your <span className="text-[#34C759]">Documentation</span>,
-<img
-  src="/Click-Animation.svg"
-  alt="Click animation"
-  className="absolute w-6 h-6 md:w-25 md:h-25"
-  style={{ left: "305px", top: "23px" }}
-/>
+                  <img
+                    src="/Click-Animation.svg"
+                    alt="Click animation"
+                    className="absolute w-6 h-6 md:w-25 md:h-25"
+                    style={{ left: "305px", top: "23px" }}
+                  />
 
               <br/>
               One Click Away
