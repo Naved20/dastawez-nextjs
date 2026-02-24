@@ -12,13 +12,13 @@ export default function Header() {
       
       <div className="hidden md:flex items-center gap-12">
         <a href="#" className="text-gray-600 hover:text-green-500 hover:glow text-sm font-medium transition-colors">Home</a>
-        <a href="#" className="text-gray-600 hover:text-green-500 text-sm font-medium transition-colors">Book Now</a>
-        <a href="#" className="text-gray-600 hover:text-green-500 text-sm font-medium transition-colors">About Us</a>
-        <a href="#" className="text-gray-600 hover:text-green-500 text-sm font-medium transition-colors">Our App</a>
-        <a href="#" className="text-gray-600 hover:text-green-500 text-sm font-medium transition-colors">Contact</a>
+        <a href="#" className="text-gray-600 hover:text-green-500 hover:glow text-sm font-medium transition-colors">Book Now</a>
+        <a href="#" className="text-gray-600 hover:text-green-500 hover:glow text-sm font-medium transition-colors">About Us</a>
+        <a href="#" className="text-gray-600 hover:text-green-500 hover:glow text-sm font-medium transition-colors">Our App</a>
+        <a href="#" className="text-gray-600 hover:text-green-500 hover:glow text-sm font-medium transition-colors">Contact</a>
       </div>
 
-      <button className="bg-green-500 text-white px-6 py-2 rounded-2xl font-medium text-sm hover:bg-green-600 transition-colors">
+      <button className="bg-[#34C759] text-white px-6 py-2 rounded-2xl font-medium text-sm hover:bg-[#00C0E8] transition-colors">
         Get Started
       </button>
     </nav>
