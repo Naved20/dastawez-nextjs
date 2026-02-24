@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
           
           <p className="text-lg text-[#969696] max-w-lg">
-            Easily book appointments, access your medical records, and consult with top healthcare providers - all in one place
+            Easily book appointments, access your document records, and consult with top mentor providers - all in one place
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
