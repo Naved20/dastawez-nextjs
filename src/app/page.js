@@ -5,6 +5,7 @@ import WhyChoose from '@/components/home/WhyChoose';
 import ContactUs from '@/components/home/ContactUs';
 import FAQ from '@/components/home/FAQ';
 import ServiceCard from '@/components/home/ServiceCard';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChoose />
       <ContactUs />
       <FAQ />
+      <Footer />
     </div>
   );
 }

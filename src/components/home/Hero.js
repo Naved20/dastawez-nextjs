@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-15 md:py-8">
+    <main className="max-w-7xl mx-auto px-6 py-15 md:py-8">
       <div className="grid md:grid-cols-2 gap-6 items-center">
         {/* Left Illustration */}
         <div className="relative flex items-center justify-center">

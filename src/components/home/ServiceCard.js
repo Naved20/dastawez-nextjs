@@ -177,8 +177,8 @@ const services = [
   };
 
   return (
-    <section className="w-full py-20 px-8">
-      <div className="max-w-[1100px] mx-auto">
+    <section className="w-full py-20 ">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start mb-12">
           <h2 className="text-[50px] font-bold text-black leading-tight mb-3 lg:mb-0">

@@ -41,7 +41,7 @@ export default function FAQ() {
 
   return (
     <section className="w-full py-16 px-6 bg-[#455A64]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-regular text-white mb-2">
@@ -74,7 +74,7 @@ export default function FAQ() {
           {faqData[activeTab].map((item) => (
             <div
               key={item.id}
-              className="bg-[rgba(255,255,255,0.04)] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.10)]"
+              className="bg-[rgba(255,255,255,0.04)] border border-[#667A8A] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-[rgba(255,255,255,0.10)]"
             >
               {/* Question */}
               <button
