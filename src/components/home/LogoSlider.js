@@ -141,15 +141,15 @@ const logos = [
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="relative w-full py-10 bg-[#3D5A6B] overflow-hidden">
+    <section className="relative w-full py-10 bg-[#455A64] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo Slider Container */}
         <div className="relative">
           {/* Left Gradient Fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#3D5A6B] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#455A64] to-transparent z-10 pointer-events-none"></div>
           
           {/* Right Gradient Fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#3D5A6B] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#455A64] to-transparent z-10 pointer-events-none"></div>
 
           {/* First Row - Scrolling Left */}
           <div className="logo-slider-wrapper overflow-hidden mb-5">
@@ -157,9 +157,9 @@ const logos = [
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={`row1-${logo.id}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[#4A6575] rounded-2xl hover:bg-[#556D7D] transition-all duration-300 cursor-pointer"
+                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[rgba(255,255,255,0.04)] backdrop-blur-md border border-white/20 rounded-2xl hover:bg-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 cursor-pointer"
                 >
-                  <span className="text-white/90 text-sm font-medium text-center leading-tight">
+                  <span className="text-white text-sm font-medium text-center leading-tight">
                     {logo.name}
                   </span>
                 </div>
@@ -173,9 +173,9 @@ const logos = [
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={`row2-${logo.id}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[#4A6575] rounded-2xl hover:bg-[#556D7D] transition-all duration-300 cursor-pointer"
+                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[rgba(255,255,255,0.04)] backdrop-blur-md border border-white/20 rounded-2xl hover:bg-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 cursor-pointer"
                 >
-                  <span className="text-white/90 text-sm font-medium text-center leading-tight">
+                  <span className="text-white text-sm font-medium text-center leading-tight">
                     {logo.name}
                   </span>
                 </div>
@@ -189,9 +189,9 @@ const logos = [
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={`row3-${logo.id}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[#4A6575] rounded-2xl hover:bg-[#556D7D] transition-all duration-300 cursor-pointer"
+                  className="flex-shrink-0 flex items-center justify-center px-5 py-4 min-w-[160px] h-20 bg-[rgba(255,255,255,0.04)] backdrop-blur-md border border-white/20 rounded-2xl hover:bg-white/20 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 transition-all duration-300 cursor-pointer"
                 >
-                  <span className="text-white/90 text-sm font-medium text-center leading-tight">
+                  <span className="text-white text-sm font-medium text-center leading-tight">
                     {logo.name}
                   </span>
                 </div>

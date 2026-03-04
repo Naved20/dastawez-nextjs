@@ -4,19 +4,19 @@ export default function WhyChoose() {
   const features = [
     {
       id: 1,
-      icon: '/why choose dastawez/filecheck.svg',
+      icon: 'home page/why choose dastawez/filecheck.svg',
       title: 'Hassle-Free Documentation',
       description: 'Get complete assistance for certificates, IDs, and government services without confusion or delays.',
     },
     {
       id: 2,
-      icon: '/why choose dastawez/zap.svg',
+      icon: 'home page/why choose dastawez/zap.svg',
       title: 'Fast & Reliable Processing',
       description: 'We ensure accurate form filling, quick submissions, and timely updates for every service.',
     },
     {
       id: 3,
-      icon: '/why choose dastawez/layers.svg',
+      icon: 'home page/why choose dastawez/layers.svg',
       title: 'All Services in One Place',
       description: 'From Aadhaar to loans and scholarships, everything is handled under one roof for your convenience.',
     }
@@ -67,7 +67,7 @@ export default function WhyChoose() {
           {/* Right Illustration */}
           <div className="relative flex items-center justify-center">
             <Image
-              src="/why choose dastawez/pana.svg"
+              src="home page/why choose dastawez/pana.svg"
               alt="Why choose Dastawez illustration"
               width={500}
               height={500}
