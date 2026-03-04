@@ -1,6 +1,30 @@
+'use client';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function Footer() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const footerLinks = {
     Services: [
       { name: 'PAN Card Services', href: '#' },
@@ -46,9 +70,9 @@ export default function Footer() {
     {
       name: 'LinkedIn',
       icon: (
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-        </svg>
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.29297 5.93848C4.57791 5.93892 4.80878 6.17096 4.80859 6.45605V16.4561L4.79785 16.5605C4.74942 16.7956 4.5414 16.9728 4.29199 16.9727H0.958008C0.672852 16.9725 0.442194 16.7403 0.442383 16.4551V6.45508L0.452148 6.35059C0.50056 6.11547 0.709495 5.93831 0.958984 5.93848H4.29297ZM10.126 5.93848C10.4111 5.93875 10.6418 6.17085 10.6416 6.45605V6.69531C11.3454 6.20568 12.1816 5.93852 13.042 5.93848L13.2617 5.94434C15.5147 6.06112 17.3057 7.92374 17.3086 10.2051V16.4561L17.2979 16.5605C17.2494 16.7956 17.0414 16.9728 16.792 16.9727H13.458C13.1728 16.9724 12.9422 16.7403 12.9424 16.4551V11.8721C12.9423 11.2371 12.427 10.7227 11.792 10.7227C11.1569 10.7227 10.6417 11.237 10.6416 11.8721V16.4561L10.6318 16.5605C10.5834 16.7957 10.3745 16.9728 10.125 16.9727H6.79102C6.50599 16.9723 6.2752 16.7402 6.27539 16.4551V6.45508L6.28613 6.35059C6.33459 6.11553 6.54255 5.93831 6.79199 5.93848H10.126ZM7.30859 15.9385H9.6084V11.8721C9.6085 10.6663 10.5862 9.68848 11.792 9.68848C12.9977 9.68852 13.9755 10.6663 13.9756 11.8721V15.9385H16.2754V10.2051C16.2797 9.21488 15.828 8.27752 15.0508 7.66406C13.6551 6.56277 11.6305 6.80162 10.5293 8.19727C10.393 8.37022 10.1613 8.43684 9.9541 8.3623V8.36133C9.74735 8.28873 9.60846 8.0942 9.6084 7.875V6.97266H7.30859V15.9385ZM1.47559 15.9385H3.77539V6.97266H1.47559V15.9385ZM2.93848 0.107422C4.24891 0.199116 5.2372 1.33605 5.14551 2.64648C5.05378 3.95428 3.92147 4.94004 2.61426 4.85254V4.85352H2.58984V4.85254C2.53892 4.85541 2.48767 4.85691 2.43652 4.85645C1.13439 4.84498 0.0883114 3.78069 0.0996094 2.47852C0.0997286 2.42588 0.100893 2.37298 0.104492 2.32031C0.194106 1.01011 1.32715 0.0201068 2.63672 0.105469C2.73723 0.0996955 2.83803 0.100402 2.93848 0.107422ZM2.37598 1.13379C1.63443 1.19086 1.07985 1.83858 1.13672 2.58008C1.19373 3.32177 1.84131 3.87732 2.58301 3.82031L2.58984 3.81934H2.625L2.61426 3.91992L2.625 3.82031C2.71418 3.83002 2.80416 3.83046 2.89355 3.82227C3.63476 3.75399 4.18058 3.09766 4.1123 2.35645C4.04378 1.61549 3.38751 1.07041 2.64648 1.13867L2.63672 1.13965L2.62695 1.13867C2.54381 1.12953 2.45942 1.1274 2.37598 1.13379Z" fill="white" stroke="white" stroke-width="0.2"/>
+      </svg>
       ),
       href: '#'
     },
@@ -178,6 +202,46 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 w-12 h-12 bg-[#34C759] hover:bg-[#00C0E8] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group z-50 animate-fade-in"
+          aria-label="Back to top"
+        >
+          <svg
+            className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </button>
+      )}
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in {
+          animation: fade-in 0.3s ease-out;
+        }
+      `}</style>
     </footer>
   );
 }

@@ -141,8 +141,18 @@ const logos = [
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="relative w-full py-10 bg-[#455A64] overflow-hidden">
+    <section className="relative w-full py-16 bg-[#455A64] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+            Services We Offer
+          </h2>
+          <p className="text-gray-300 text-lg">
+            Comprehensive document and government service solutions
+          </p>
+        </div>
+
         {/* Logo Slider Container */}
         <div className="relative">
           {/* Left Gradient Fade */}
